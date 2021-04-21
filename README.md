@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center"> 
-	Next Level Week 5.0 🚀
+	Next Level Week 3.0 🚀
 </h4>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/tacsio/nlw5?color=%237159c1)
@@ -26,6 +26,12 @@
 - [React Navigation](https://reactnavigation.org/) - Routing and navigation for your React Native apps.
 - [Axios][axios] - Promise based HTTP client for the browser and node.js.
 - [Expo][expo] - Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+- [Expo Font][expo-font] - Allows loading fonts from the web and using them in React Native components. See more detailed usage information in the Using Custom Fonts guide.
+- [Expo App Loading][expo-app-loading] - To keep the splash screen visible while the AppLoading component is mounted.
+- [Expo Vector Icons][expo-vector-icons] - It includes popular icon sets and you can browse all of the icons using icons.expo.fyi.
+- [React Native Iphone X Helper][iphone-x-helper] - A library to help you design your react-native app for notched iPhones.
+- [Expo SVG][expo-svg] - Allows you to use SVGs in your app, with support for interactivity and animation.
+- [Expo Lottie][expo-lottie] - Support for Lottie, the animation library from AirBnB.
 
 #### :hash: Run Scripts
 
@@ -75,3 +81,8 @@ yarn start
 [react-leaflet]: https://react-leaflet.js.org/
 [h2]: http://www.h2database.com/html/main.html
 [sqlite]: https://www.sqlite.org/index.html
+[expo-app-loading]: https://docs.expo.io/versions/latest/sdk/app-loading/
+[expo-vector-icons]: https://docs.expo.io/guides/icons/
+[iphone-x-helper]: https://github.com/ptelad/react-native-iphone-x-helper
+[expo-svg]: https://docs.expo.io/versions/latest/sdk/svg/
+[expo-lottie]: https://docs.expo.io/versions/latest/sdk/lottie/
