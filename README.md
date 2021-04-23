@@ -20,7 +20,7 @@
 [Layout](https://www.notion.so/Trilha-React-Native-525e7888c5d941f5ab8162a200cd2f35)
 
 
-## :iphone: Mobile
+## :iphone: Plant Manager
 
 - [React Native][reactnative] - React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.
 - [React Navigation](https://reactnavigation.org/) - Routing and navigation for your React Native apps.
@@ -32,6 +32,9 @@
 - [React Native Iphone X Helper][iphone-x-helper] - A library to help you design your react-native app for notched iPhones.
 - [Expo SVG][expo-svg] - Allows you to use SVGs in your app, with support for interactivity and animation.
 - [Expo Lottie][expo-lottie] - Support for Lottie, the animation library from AirBnB.
+- [Expo Async Storage][expo-async-storage] - An asynchronous, unencrypted, persistent, key-value storage API.
+- [Expo DateTime Picker][expo-datatime-picker] - A component that provides access to the system UI for date and time selection.
+- [Date fns][date-fns] - Modern JavaScript date utility library
 
 #### :hash: Run Scripts
 
@@ -86,3 +89,6 @@ yarn start
 [iphone-x-helper]: https://github.com/ptelad/react-native-iphone-x-helper
 [expo-svg]: https://docs.expo.io/versions/latest/sdk/svg/
 [expo-lottie]: https://docs.expo.io/versions/latest/sdk/lottie/
+[expo-async-storage]: https://docs.expo.io/versions/latest/sdk/async-storage/
+[expo-datatime-picker]: https://docs.expo.io/versions/latest/sdk/date-time-picker/
+[date-fns]: https://date-fns.org/
