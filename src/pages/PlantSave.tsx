@@ -21,7 +21,7 @@ import { Button } from "../components/Button";
 import colors from "../styles/colors";
 import fonts from "../styles/fonts";
 import { format, isBefore } from "date-fns";
-import { PlantProps, savePlant } from "../libs/Storage";
+import { PlantProps, savePlant } from "../libs/storage";
 
 import waterdrop from "../assets/waterdrop.png";
 
@@ -71,67 +71,70 @@ export function PlantSave() {
         icon: "hug",
         nextScreen: "MyPlants",
       });
-
     } catch {
       Alert.alert("Não foi possível salvar.");
     }
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.plantInfo}>
-        <SvgFromUri uri={plant.photo} height={150} width={150} />
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={styles.container}
+    >
+      <View style={styles.container}>
+        <View style={styles.plantInfo}>
+          <SvgFromUri uri={plant.photo} height={150} width={150} />
 
-        <Text style={styles.plantName}>{plant.name}</Text>
-        <Text style={styles.plantAbout}>{plant.about}</Text>
-      </View>
-
-      <View style={styles.controller}>
-        <View style={styles.tipContainer}>
-          <Image style={styles.tipImage} source={waterdrop} />
-          <Text style={styles.tipText}>{plant.water_tips}</Text>
+          <Text style={styles.plantName}>{plant.name}</Text>
+          <Text style={styles.plantAbout}>{plant.about}</Text>
         </View>
 
-        <Text style={styles.alertLabel}>
-          Escolha o melhor horário para ser lembrado.
-        </Text>
+        <View style={styles.controller}>
+          <View style={styles.tipContainer}>
+            <Image style={styles.tipImage} source={waterdrop} />
+            <Text style={styles.tipText}>{plant.water_tips}</Text>
+          </View>
 
-        {showDatePicker && (
-          <DateTimePicker
-            value={selectedDateTime}
-            mode="time"
-            onChange={handleChangeTime}
-          />
-        )}
+          <Text style={styles.alertLabel}>
+            Escolha o melhor horário para ser lembrado.
+          </Text>
 
-        {Platform.OS === "android" && (
-          <TouchableOpacity
-            style={styles.dateTimePickerButton}
-            onPress={handleOpenDateTimePickerForAndroid}
-          >
-            <Text style={styles.dateTimePickerText}>{`Mudar ${format(
-              selectedDateTime,
-              "HH:mm"
-            )}`}</Text>
-          </TouchableOpacity>
-        )}
+          {showDatePicker && (
+            <DateTimePicker
+              value={selectedDateTime}
+              mode="time"
+              onChange={handleChangeTime}
+            />
+          )}
 
-        <Button title="Cadastrar planta" onPress={handleSave} />
+          {Platform.OS === "android" && (
+            <TouchableOpacity
+              style={styles.dateTimePickerButton}
+              onPress={handleOpenDateTimePickerForAndroid}
+            >
+              <Text style={styles.dateTimePickerText}>{`Mudar ${format(
+                selectedDateTime,
+                "HH:mm"
+              )}`}</Text>
+            </TouchableOpacity>
+          )}
+
+          <Button title="Cadastrar planta" onPress={handleSave} />
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: "space-between",
     color: colors.shape,
   },
   plantInfo: {
     flex: 1,
     paddingHorizontal: 30,
-    paddingVertical: 50,
+    paddingVertical: 40,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: colors.shape,
@@ -163,7 +166,7 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 20,
     position: "relative",
-    bottom: 30,
+    bottom: 35,
   },
   tipImage: {
     width: 54,

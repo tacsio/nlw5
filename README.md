@@ -34,6 +34,7 @@
 - [Expo Lottie][expo-lottie] - Support for Lottie, the animation library from AirBnB.
 - [Expo Async Storage][expo-async-storage] - An asynchronous, unencrypted, persistent, key-value storage API.
 - [Expo DateTime Picker][expo-datatime-picker] - A component that provides access to the system UI for date and time selection.
+- [Expo Notification][expo-notification] - Provides an API to fetch push notification tokens and to present, schedule, receive and respond to notifications.
 - [Date fns][date-fns] - Modern JavaScript date utility library
 
 #### :hash: Run Scripts
@@ -92,3 +93,4 @@ yarn start
 [expo-async-storage]: https://docs.expo.io/versions/latest/sdk/async-storage/
 [expo-datatime-picker]: https://docs.expo.io/versions/latest/sdk/date-time-picker/
 [date-fns]: https://date-fns.org/
+[expo-notification]: https://docs.expo.io/versions/latest/sdk/notifications/

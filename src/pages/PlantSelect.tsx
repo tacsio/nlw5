@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
 } from "react-native";
 
-import { PlantProps } from "../libs/Storage";
+import { PlantProps } from "../libs/storage";
 import { EnvironmentButton } from "../components/EnvironmentButton";
 
 import { Header } from "../components/Header";
