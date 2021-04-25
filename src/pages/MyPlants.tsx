@@ -7,7 +7,6 @@ import {
   loadPlants,
   PlantProps,
   removePlant,
-  StoragePlantProps,
 } from "../libs/storage";
 import { formatDistance } from "date-fns";
 import { pt } from "date-fns/locale";

@@ -46,9 +46,13 @@ yarn start
 ```
 
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/mobile1.png" width="250px" />
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/mobile2.png" width="250px" />
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/mobile3.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/1.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/2.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/3.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/4.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/5.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/6.png" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/7.png" width="250px" />
 </h1>
 
 ## :bullettrain_side: Contributing
